@@ -1,18 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
 
 .geo-regular {
-    font-family: "Geo", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geo-regular-italic {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+* {
+  font-style: none;
+  font-size: 1.2rem;
+}
+
+* {
+  font-style: none;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #2e1e45;
+
+  & header{
+    & .TituloDaPagina{
+      font-size: 2rem;
+      position: absolute;
+      margin-left: 12%;
+      margin-top: 5%;
+      color: #ccbca1;
+      border-bottom: 1px solid #ccbca1;
+      
+    }
   }
   
-  .geo-regular-italic {
-    font-family: "Geo", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
+  & .InputConteiner {
+    background-color: #ccbca1;
+    width: 600px;
+    height: 300px;
+    margin-top: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px); 
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0.9, 0.9);
   
-  *{
-    font-style: none;
-    font-size:1.2rem;
+    & .ItensConteiner{
+      width: 500px;
+      height: 200px;
+      
+      & input{
+      width: 97%;
+      margin-bottom: 10%;
+    }
+
+    & button{
+      border-radius: 10%;
+      border: none;
+      font-size: 0.8rem;
+      height: 30px;
+      width: 100px;
+      color: #000000;
+      margin-left: 38%;
+    }
+    & button:hover{
+      background-color: #ff695c;
+      transition: 0.3s;
+      color: #ccbca1;
+    }
+
+    & .ResultadoDaAcao{
+      margin-left:37% ;
+      color: #ccbca1;
+      margin-top:10% ;
+    }
+
+   
+    }
+    
   }
+}
